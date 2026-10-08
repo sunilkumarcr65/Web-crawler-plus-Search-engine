@@ -1,0 +1,9 @@
+# Seed URLs for the demo crawl.
+# Restricted to domains reachable from this sandbox's network allowlist.
+https://github.com/torvalds/linux
+https://github.com/nodejs/node
+https://github.com/pallets/flask
+https://www.npmjs.com/package/react
+https://www.npmjs.com/package/express
+https://pypi.org/project/requests/
+https://pypi.org/project/numpy/

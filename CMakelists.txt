@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.10)
+project(web_crawler_search_engine CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+find_package(CURL REQUIRED)
+find_package(Threads REQUIRED)
+
+add_executable(search_engine
+    main.cpp
+    crawler.cpp
+    html_parser.cpp
+    http_fetcher.cpp
+    index.cpp
+    pagerank.cpp
+    search_engine.cpp
+    tokenizer.cpp
+)
+
+target_link_libraries(search_engine PRIVATE CURL::libcurl Threads::Threads)
